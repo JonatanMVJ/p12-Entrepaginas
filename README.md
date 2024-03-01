@@ -27,6 +27,8 @@ samples, guidance on mobile development, and a full API reference.
 - https://github.com/flutter-teacher/card-widget/blob/main/card_test.dart
 
 - Jonatan Mazuca: Correo:a.21308051280382@cbtis128.edu.mx
+
+- 
 -![image](https://github.com/JonatanMVJ/p12-Entrepaginas/assets/143743615/eea08ff3-72e2-4867-bcc6-1af52f81c580)
 ![image](https://github.com/JonatanMVJ/p12-Entrepaginas/assets/143743615/50a8c42d-2b5c-4628-a839-e5142fe2f85e)
 
