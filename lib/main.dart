@@ -1,43 +1,28 @@
+// Código 3: main.dart
 import 'package:flutter/material.dart';
+import 'Pantalla1.dart';
+import 'Pantalla2.dart';
 
-void main() => runApp(MyApp());
+void main() => runApp(RutasPaginas());
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-  // This widget is the root of your application.
+class RutasPaginas extends StatelessWidget {
+  const RutasPaginas({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      // Application name
-      title: 'Flutter Hello World',
-      // Application theme data, you can set the colors for the application as
-      // you want
+      debugShowCheckedModeBanner: false,
+      title: "App entre paginas",
       theme: ThemeData(
-        // useMaterial3: true,
-        primarySwatch: Colors.blue,
+        primaryColor: Colors.red, // Cambiar color primario a rojo
+        scaffoldBackgroundColor:
+            Colors.white, // Cambiar color de fondo del scaffold a blanco
       ),
-      // A widget which will be started on application startup
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
-    );
-  }
-}
-
-class MyHomePage extends StatelessWidget {
-  final String title;
-  const MyHomePage({super.key, required this.title});  
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        // The title text which will be shown on the action bar
-        title: Text(title),
-      ),
-      body: Center(
-        child: Text(
-          'Hello, World!',
-        ),
-      ),
+      initialRoute: "/",
+      routes: {
+        "/": (context) => Pantalla1(),
+        "/Pantalla2": (context) => Pantalla2()
+      },
     );
   }
 }
